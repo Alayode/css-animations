@@ -19,20 +19,6 @@ body {
     infinite: the number of times animation will loop
 
     */
-#hexagon {
-   
-}
-
-@keyframes bobble {
-    0% {
-        transform: translateY(10px);
-
-    }
-    50% {
-        transform: translateY(40px);
-
-    }
-    100% {
-        transform: translateY(10px);
-     }
+#hexagon:hover {
+   transform: scale3d(1.2, 1.2, 1) rotate(45deg);
 }
