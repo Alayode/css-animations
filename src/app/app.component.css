@@ -20,7 +20,7 @@ body {
 
     */
 #hexagon {
-    animation: bobble 2s infinite; 
+   
 }
 
 @keyframes bobble {
