@@ -24,3 +24,21 @@
         transform: tranlate3d(50px, 40px, 0px)
     }
 }
+/* shorthand */
+#bar {
+    transition: transform .5s ease-in-out;
+}
+/* longhand */
+#karmaKramer {
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+
+/* 
+ Specifying a timing function as part of your animation
+or transition is optional. The reason is that every animation
+or transition you use has its timing-function
+property defined by default with a value of ease.
+*/
+
