@@ -1,0 +1,26 @@
+/*  shorthand */
+
+#foo {
+    animation: bobble 2s ease-in infinite;
+}
+
+/*  longhand */
+#somethingSomethingDarkSide {
+    animation-name: deathstar;
+    animation-duration: 25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes bobble {
+    0% {
+        transform: tranlate3d(50px, 40px, 0px)
+    }
+    50% {
+        transform: tranlate3d(50px, 50px, 0px);
+        animation-timing-function: ease-out;
+    }
+   100% {
+        transform: tranlate3d(50px, 40px, 0px)
+    }
+}
