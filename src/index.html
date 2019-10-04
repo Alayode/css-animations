@@ -17,7 +17,7 @@
     changes everytime we click on it. That is handled entirely
     via the the script tag below
    -->
-  <style>
+  <!-- <style>
       #container {
           width: 75%;
           height: 290px;
@@ -28,31 +28,31 @@
           background-color: yellow;
           transition: background-color .2s ease-out;
       }
-    </style>
-  <div id="container">
+    </style>                                                                               -->
+  <!-- <div id="container"> -->
     <!-- Doesn't work  -->
-      <script src="./assets/colorChange.js"></script> 
+      <!-- <script src="./assets/colorChange.js"></script>  -->
        <!-- This code works -->
        <script>
 
          // stores a reference to our container div element
-          var container = document.querySelector("#container");
+          // var container = document.querySelector("#container");
           
-          var zeros = "0000000";
+          // var zeros = "0000000";
           // Callback our function
-          container.addEventListener("click", changeColor, false);
+          // container.addEventListener("click", changeColor, false);
           
           // Declare our changeColor Function
-          function changeColor(e) {
-              var color = "#" + Math.floor(Math.random() * 0xFFFFFF).toString(16);
-              var colorLength = color.length;
-              if (colorLength < 7) {
-                color += zeros.substring(0, zeros.length - colorLength);
-              }
-              // Setting the container elements background color to 
-              // the new randomly generated value.
-              container.style.backgroundColor = color;
-          }
+            // function changeColor(e) {
+            //     var color = "#" + Math.floor(Math.random() * 0xFFFFFF).toString(16);
+            //     var colorLength = color.length;
+            //     if (colorLength < 7) {
+            //       color += zeros.substring(0, zeros.length - colorLength);
+            //     }
+            //     // Setting the container elements background color to 
+            //     // the new randomly generated value.
+            //     container.style.backgroundColor = color;
+            // }
         </script> 
 
   </div>
